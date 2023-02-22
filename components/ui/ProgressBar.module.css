@@ -1,0 +1,31 @@
+.bar {
+  position: fixed;
+  width: 100%;
+  height: 3px;
+  top: 0;
+  left: 0;
+  background-color: #e67700;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.line {
+  position: fixed;
+  width: 100%;
+  height: 3px;
+  background-color: #444;
+  top: 0;
+  left: 0;
+
+  animation-name: move;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
