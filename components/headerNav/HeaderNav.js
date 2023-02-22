@@ -3,29 +3,20 @@ import Link from "next/link";
 import React from "react";
 
 import styles from "./HeaderNav.module.css";
+import LinkNav from "./LinkNav";
+import ProfileNav from "./ProfileNav";
 
 function HeaderNav() {
   return (
     <nav className={styles.nav}>
-      <ul>
-        <li className={styles.item}>
-          <Link href="/collections">
-            <Image
-              alt="reelrate logo"
-              src="/play-outline.svg"
-              width="30"
-              height="30"
-            />
-            <p>collections</p>
-          </Link>
-        </li>
-
-        <li className={styles.item}>
-          <Link href="/rates">
-            <Image src="/star-outline.svg" width="30" height="30" />
-            <p>rates</p>
-          </Link>
-        </li>
+      <ul className={styles.list}>
+        <LinkNav
+          title="collections"
+          link="/collections"
+          iconPath="/play-outline.svg"
+        />
+        <LinkNav title="rates" link="/rates" iconPath="/star-outline.svg" />
+        <ProfileNav />
       </ul>
     </nav>
   );
