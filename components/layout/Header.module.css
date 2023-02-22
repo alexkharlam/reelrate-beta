@@ -1,0 +1,48 @@
+.container {
+  /* background-color: #171a1d; */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.2rem;
+
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 1.2rem 2.4rem;
+  font-size: 2.4rem;
+}
+
+.img-container {
+  display: block;
+  height: 7rem;
+}
+
+.img-container img {
+  height: 100%;
+  width: auto;
+}
+
+.login,
+.login:link,
+.login:visited {
+  font-size: 2.4rem;
+  border-radius: 2000px;
+  padding: 1.2rem 2.4rem;
+
+  /* background: linear-gradient(to right, #5f3dc4, #26184e); */
+  background-color: #5f3dc4;
+  transition: all 0.3s;
+}
+
+.login:hover,
+.login:hover:link,
+.login:hover:visited {
+  transform: scale(1.1);
+  border-radius: 2000px;
+  padding: 1.2rem 2.4rem;
+
+  /* background: linear-gradient(to right, #5f3dc4, #d38312); */
+  background-color: #d38312;
+}

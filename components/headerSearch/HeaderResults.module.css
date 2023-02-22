@@ -1,0 +1,43 @@
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  background-color: #1e2125;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 100%;
+  border-radius: 20px;
+  opacity: 0;
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 50vh;
+
+  animation-name: reveal;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.list {
+  width: 100%;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.message {
+  text-align: center;
+  width: 100%;
+  margin: 2.4rem 0;
+}

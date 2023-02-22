@@ -1,0 +1,27 @@
+.container {
+  width: 50%;
+  position: relative;
+  padding: 0.2rem;
+
+  border-radius: 20px;
+}
+
+.input {
+  display: block;
+  padding: 1.2rem;
+  width: 100%;
+
+  background-color: rgb(20, 22, 25, 0.5);
+  font-size: 3rem;
+  font-family: "open-sans";
+  color: #f8f9fa;
+  border: none;
+  border-radius: 20px;
+  border: 1px solid #777;
+}
+
+.input:focus {
+  outline: 1px solid #f8f9fa;
+  /* outline: none; */
+  /* TODO: FIX */
+}
