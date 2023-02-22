@@ -21,6 +21,7 @@
   overflow-x: hidden;
   overflow-y: scroll;
   max-height: 50vh;
+  z-index: 1000;
 
   animation-name: reveal;
   animation-duration: 0.3s;
