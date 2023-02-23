@@ -1,13 +1,13 @@
 import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
 
-function ProfilePage() {
+function LoginPage() {
   const router = useRouter();
   const isAuthed = useSelector((state) => state.auth.isAuthed);
 
-  if (!isAuthed) router.replace("/profile/login");
+  if (isAuthed) router.replace("/");
 
-  return <div>Your profile</div>;
+  return <div>LoginPage</div>;
 }
 
-export default ProfilePage;
+export default LoginPage;

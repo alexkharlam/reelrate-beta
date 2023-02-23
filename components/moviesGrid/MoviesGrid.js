@@ -2,8 +2,6 @@ import MovieGridItem from "./MovieGridItem";
 import styles from "./MoviesGrid.module.css";
 
 function MoviesGrid({ title, movies }) {
-  console.log(movies);
-
   const slicedMovies = movies.results.slice(0, 10);
 
   const moviesJSX = slicedMovies.map((movie) => {
