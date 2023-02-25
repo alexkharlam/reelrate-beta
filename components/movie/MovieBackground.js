@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import MotionReveal from "../ui/MotionReveal";
 import styles from "./MovieBackground.module.css";
 
 function MovieBackground({ imgPath }) {
@@ -11,10 +12,12 @@ function MovieBackground({ imgPath }) {
     <>
       {imgPath && <div className={styles.filter} />}
       {imgPath && (
-        <img
-          src={src}
-          className={`${styles.img} ${isLoaded && styles.animate}`}
-        />
+        <div className={styles["img-container"]}>
+          <img
+            src={src}
+            className={`${styles.img} ${isLoaded && styles.animate}`}
+          />
+        </div>
       )}
     </>
   );

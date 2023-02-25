@@ -7,6 +7,7 @@ export function transformMovieData(rowData) {
   const tagline = rowData.tagline;
   const genres = rowData.genres;
   const duration = rowData.runtime;
+  const id = rowData.id;
 
   const releaseDateArr = rowData.release_date.split("-");
 
@@ -17,6 +18,7 @@ export function transformMovieData(rowData) {
   };
 
   return {
+    id,
     imgPath,
     title,
     posterPath,

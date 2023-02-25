@@ -1,13 +1,20 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import MoviesGrid from "@/components/moviesGrid/MoviesGrid";
 
 function IndexPage({ popularMovies, topRatedMovies }) {
   return (
-    <main className="container">
-      <MoviesGrid title={"Popular last week"} movies={popularMovies} />
-      <MoviesGrid title={"Greatest of all time"} movies={topRatedMovies} />
-    </main>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
+      <main className="container">
+        <MoviesGrid title={"Popular last week"} movies={popularMovies} />
+        <MoviesGrid title={"Greatest of all time"} movies={topRatedMovies} />
+      </main>
+    </motion.div>
   );
 }
 

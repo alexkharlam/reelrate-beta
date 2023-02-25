@@ -3,6 +3,7 @@ import styles from "./HeaderResults.module.css";
 
 import HeaderResultItem from "./HeaderResultItem";
 import LoadingSpinner from "../ui/LoadingSpinner";
+import MotionReveal from "../ui/MotionReveal";
 
 function HeaderResults({ results, loading, error }) {
   if (loading)

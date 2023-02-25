@@ -3,10 +3,16 @@ import styles from "./ProfileNav.module.css";
 import Image from "next/image";
 
 import ProfileNavItem from "./ProfileNavItem";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { authActions } from "@/store/authSlice";
 
 function ProfileNav() {
+  const dispatch = useDispatch();
   const isAuthed = useSelector((state) => state.auth.isAuthed);
+
+  const logoutHandler = function () {
+    dispatch(authActions.logout());
+  };
 
   return (
     <li className={styles["profile-item"]}>
@@ -15,9 +21,15 @@ function ProfileNav() {
 
       <ul className={styles["profile-list"]}>
         {isAuthed && <ProfileNavItem title="Profile" url="/profile" />}
-        <ProfileNavItem title="Login" url="/profile/login" />
-        <ProfileNavItem title="Create account" url="/profile/register" />
-        {isAuthed && <ProfileNavItem title="Logout" url="/" />}
+        {!isAuthed && <ProfileNavItem title="Login" url="/profile/login" />}
+        {!isAuthed && (
+          <ProfileNavItem title="Create account" url="/profile/register" />
+        )}
+        {isAuthed && (
+          <button onClick={logoutHandler} className={styles.logout}>
+            Logout
+          </button>
+        )}
       </ul>
     </li>
   );

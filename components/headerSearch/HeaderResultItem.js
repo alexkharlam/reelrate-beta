@@ -1,6 +1,7 @@
 import { getImagePath } from "@/utils/functions/getImagePath";
 import Link from "next/link";
 import React from "react";
+import MotionReveal from "../ui/MotionReveal";
 import MovieRating from "../ui/MovieRating";
 
 import styles from "./HeaderResultItem.module.css";

@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import styles from "./Header.module.css";
+import { motion } from "framer-motion";
 
 import SearchInput from "../headerSearch/SearchInput";
 import HeaderNav from "../headerNav/HeaderNav";
