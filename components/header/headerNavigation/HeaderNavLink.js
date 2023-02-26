@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./LinkNav.module.css";
+import styles from "./HeaderNavLink.module.css";
 
-function LinkNav({ title, link, iconPath }) {
+function HeaderNavLink({ title, link, iconPath }) {
   return (
     <li className={styles.item}>
       <Link className={styles["nav-link"]} href={link}>
@@ -13,4 +13,4 @@ function LinkNav({ title, link, iconPath }) {
   );
 }
 
-export default LinkNav;
+export default HeaderNavLink;

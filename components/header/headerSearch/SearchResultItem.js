@@ -1,14 +1,14 @@
-import { getImagePath } from "@/utils/functions/getImagePath";
+import styles from "./SearchResultItem.module.css";
 import Link from "next/link";
-import React from "react";
-import MotionReveal from "../ui/MotionReveal";
-import MovieRating from "../ui/MovieRating";
 
-import styles from "./HeaderResultItem.module.css";
+import { getImagePath } from "@/utils/functions/getImagePath";
+
+import { getRatingColor } from "@/utils/functions/getRatingColor";
 
 function HeaderResultItem({ movie }) {
   const { posterPath, title, releaseDate: year, rating } = movie;
   const imgSrc = getImagePath(posterPath, 500);
+  const color = getRatingColor(rating);
 
   return (
     <li className={styles.item}>
@@ -19,7 +19,9 @@ function HeaderResultItem({ movie }) {
         <div className={styles.description}>
           <p className={styles.title}>{title}</p>
           <p className={styles.year}>{year}</p>
-          <MovieRating rating={rating} />
+          <p className={styles.rating}>
+            IMDB: <span className={color}>{rating}</span>
+          </p>
         </div>
       </Link>
     </li>

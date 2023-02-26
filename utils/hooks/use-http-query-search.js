@@ -2,7 +2,7 @@ import { useCallback, useState } from "react";
 
 import { API_KEY } from "../config/movies-api";
 
-export function useHttpSearch() {
+export function useHttpQuerySearch() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [results, setResults] = useState([]);

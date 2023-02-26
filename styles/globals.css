@@ -74,3 +74,28 @@ button {
 body {
   margin-bottom: 9rem;
 }
+
+/* COLOrS */
+
+.dark-green {
+  background-color: #2b8a3e;
+}
+
+.green {
+  background-color: #51cf66;
+}
+
+.dark-yellow {
+  background-color: #e67700;
+}
+.yellow {
+  background-color: #ffd43b;
+}
+
+.red {
+  background-color: #f03e3e;
+}
+
+.gray {
+  background-color: #868e96;
+}

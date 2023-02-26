@@ -1,8 +1,6 @@
-import MotionReveal from "../ui/MotionReveal";
 import styles from "./MovieDescription.module.css";
 
 function MovieDescription({ movieData }) {
-  console.log(movieData);
   const {
     title,
     overview,
@@ -14,10 +12,11 @@ function MovieDescription({ movieData }) {
     releaseDate,
     imdbRating,
   } = movieData;
+
   const genres = genresArray.map((genre) => genre.name).join(", ");
 
   return (
-    <MotionReveal>
+    <div>
       <section className={styles.description}>
         <div className={!imgPath && posterPath ? styles["img-box"] : ""}>
           {!imgPath && posterPath && (
@@ -48,7 +47,7 @@ function MovieDescription({ movieData }) {
           </li>
         </ul>
       </section>
-    </MotionReveal>
+    </div>
   );
 }
 

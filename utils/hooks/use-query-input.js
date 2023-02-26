@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export function useInputSearch() {
+export function useQueryInput() {
   const [inputValue, setInputValue] = useState("");
   const [isFocusing, setIsFocusing] = useState(false);
 

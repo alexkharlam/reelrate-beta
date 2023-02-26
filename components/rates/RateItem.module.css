@@ -1,0 +1,98 @@
+.poster-container {
+  display: block;
+  position: relative;
+
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.poster-container:hover .filter {
+  opacity: 0;
+}
+
+.filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.1)
+  );
+
+  transition: all 0.5s;
+}
+
+.rate-container {
+  width: 10rem;
+  height: 10rem;
+  z-index: 10900;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  opacity: 0.7;
+
+  transition: all 0.5s;
+}
+
+.poster-container:hover .rate-container {
+  opacity: 1;
+}
+
+.rate-value {
+  font-size: 4.8rem;
+
+  text-align: center;
+  padding: 2rem 2.4rem;
+  border-radius: 50%;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* buttons */
+.buttons-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-top: 1.2rem;
+}
+
+.buttons-container button {
+  padding: 2rem;
+  font-size: 2rem;
+  width: 100%;
+
+  color: #f8f9fa;
+  border: none;
+  border-radius: 30px;
+  transition: all 0.2s;
+}
+
+.change {
+  background-color: #f08c00;
+}
+
+.change:hover {
+  background-color: #e67700;
+}
+
+.delete {
+  background-color: #868e96;
+}
+
+.delete:hover {
+  background-color: #495057;
+}

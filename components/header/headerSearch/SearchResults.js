@@ -1,11 +1,10 @@
 import React from "react";
-import styles from "./HeaderResults.module.css";
+import styles from "./SearchResults.module.css";
 
-import HeaderResultItem from "./HeaderResultItem";
-import LoadingSpinner from "../ui/LoadingSpinner";
-import MotionReveal from "../ui/MotionReveal";
+import HeaderResultItem from "./SearchResultItem";
+import LoadingSpinner from "../../ui/LoadingSpinner";
 
-function HeaderResults({ results, loading, error }) {
+function SearchResults({ results, loading, error }) {
   if (loading)
     return (
       <div className={styles.container}>
@@ -31,4 +30,4 @@ function HeaderResults({ results, loading, error }) {
   );
 }
 
-export default HeaderResults;
+export default SearchResults;

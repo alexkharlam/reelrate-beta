@@ -1,7 +1,9 @@
-import MovieGridItem from "./MovieGridItem";
 import styles from "./MoviesGrid.module.css";
 
+import MovieGridItem from "./MovieGridItem";
+
 function MoviesGrid({ title, movies }) {
+  // only showing first 10 of popular movies on the main page:
   const slicedMovies = movies.results.slice(0, 10);
 
   const moviesJSX = slicedMovies.map((movie) => {

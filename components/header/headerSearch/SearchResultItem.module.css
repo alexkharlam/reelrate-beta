@@ -49,3 +49,17 @@
   font-size: 1.8rem;
   color: #999;
 }
+
+/* RATING */
+.rating {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.rating span {
+  color: #fff;
+  padding: 0.2rem 0.8rem;
+  border-radius: 1000px;
+}

@@ -1,0 +1,43 @@
+.rate {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 2.4rem;
+  background-color: #f08c00;
+  border: none;
+  color: #f8f9fa;
+  padding: 2.4rem;
+  border-radius: 30px;
+
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.3s;
+}
+
+.rate:hover {
+  background-color: #e67700;
+}
+
+.rate img {
+  filter: invert(100%) sepia(0%) saturate(7498%) hue-rotate(188deg)
+    brightness(113%) contrast(101%);
+}
+
+.current-rate-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+
+  margin-bottom: 3.2rem;
+}
+
+.current-heading {
+  font-size: 2.4rem;
+}
+
+.current-value {
+  font-size: 8rem;
+}

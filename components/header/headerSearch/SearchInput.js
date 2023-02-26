@@ -1,29 +1,21 @@
-import { useInputSearch } from "@/utils/hooks/use-input-search";
-import { useHttpSearch } from "@/utils/hooks/use-http-search";
-import React, { useEffect } from "react";
 import styles from "./SearchInput.module.css";
+import { useEffect } from "react";
 
-import HeaderResults from "./HeaderResults";
-import { API_KEY } from "@/utils/config/movies-api";
+import { useHttpQuerySearch } from "@/utils/hooks/use-http-query-search";
+import { useQueryInput } from "@/utils/hooks/use-query-input";
+
+import SearchResults from "./SearchResults";
 
 function SearchInput() {
-  const { results, setResults, makeRequest, error, loading } = useHttpSearch();
+  const { results, setResults, makeRequest, error, loading } =
+    useHttpQuerySearch();
   const { inputValue, isFocusing, changeHandler, focusHandler, blurHandler } =
-    useInputSearch();
+    useQueryInput();
 
   useEffect(() => {
     const search = setTimeout(() => {
       makeRequest(inputValue);
     }, 1000);
-
-    // async function getConfig() {
-    //   const response = await fetch(
-    //     `https://api.themoviedb.org/3/configuration?api_key=${API_KEY}`
-    //   );
-    //   const data = await response.json();
-    //   console.log(data);
-    // }
-    // getConfig();
 
     if (inputValue.length === 0) setResults([]);
 
@@ -42,7 +34,7 @@ function SearchInput() {
         placeholder="Search over 2m movies"
       />
       {isFocusing && inputValue.length > 0 && (
-        <HeaderResults loading={loading} error={error} results={results} />
+        <SearchResults loading={loading} error={error} results={results} />
       )}
     </div>
   );

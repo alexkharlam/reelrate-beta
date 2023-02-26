@@ -1,12 +1,10 @@
-import CenteredMessage from "@/components/ui/CenteredMessage";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import RatesList from "@/components/rates/RatesList";
 
 function RatesPage() {
-  const isLoggedIn = useSelector((state) => state.auth.isAuthed);
-  if (!isLoggedIn)
-    return <CenteredMessage message={"Please login to use rates feature :)"} />;
+  const rates = useSelector((state) => state.rates.rates);
 
-  return <div>RatesPage</div>;
+  return <RatesList rates={rates} />;
 }
 
 export default RatesPage;

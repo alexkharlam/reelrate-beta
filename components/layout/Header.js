@@ -1,11 +1,9 @@
-import Link from "next/link";
-import React from "react";
-import Image from "next/image";
 import styles from "./Header.module.css";
-import { motion } from "framer-motion";
+import Link from "next/link";
+import Image from "next/image";
 
-import SearchInput from "../headerSearch/SearchInput";
-import HeaderNav from "../headerNav/HeaderNav";
+import SearchInput from "../header/headerSearch/SearchInput";
+import HeaderNav from "../header/headerNavigation/HeaderNav";
 
 function Header() {
   return (
@@ -24,7 +22,7 @@ function Header() {
           <HeaderNav />
         </header>
       </div>
-      <div className={styles["mobile-container"]}>mobile nav</div>
+      <div className={styles["mobile-container"]}>Mobile nav</div>
     </>
   );
 }

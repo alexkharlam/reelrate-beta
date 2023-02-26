@@ -1,6 +1,5 @@
-import { useEffect, useState } from "react";
-import MotionReveal from "../ui/MotionReveal";
 import styles from "./MovieBackground.module.css";
+import { useEffect, useState } from "react";
 
 function MovieBackground({ imgPath }) {
   const [isLoaded, setIsLoaded] = useState(false);
