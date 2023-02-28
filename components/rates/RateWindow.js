@@ -23,7 +23,12 @@ function RateWindow({ movieData, onClose }) {
   return (
     <>
       <button onClick={onClose} className={styles.close}>
-        <Image src="/close-outline.svg" width="30" height="30" alt="close" />
+        <Image
+          src="/icons/close-outline.svg"
+          width="30"
+          height="30"
+          alt="close"
+        />
       </button>
       <div className={styles.container}>
         <div className={styles["rate-container"]}>

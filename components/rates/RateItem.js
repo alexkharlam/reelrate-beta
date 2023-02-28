@@ -11,9 +11,10 @@ import { getRatingColor } from "@/utils/functions/getRatingColor";
 import { useRateWindow } from "@/utils/hooks/use-rate-window";
 
 function RateItem({ rateData }) {
+  const { title, id, rateValue, posterPath } = rateData;
+
   const { isRating, toggleIsRating } = useRateWindow();
 
-  const { title, id, rateValue, posterPath } = rateData;
   const src = getImagePath(posterPath, 500);
   const color = getRatingColor(rateValue);
 

@@ -9,12 +9,12 @@ function HeaderNav() {
         <HeaderNavLink
           title="watch list"
           link="/watch-list"
-          iconPath="/play-outline.svg"
+          iconPath="/icons/play-outline.svg"
         />
         <HeaderNavLink
           title="rates"
           link="/rates"
-          iconPath="/star-outline.svg"
+          iconPath="/icons/star-outline.svg"
         />
       </ul>
     </nav>

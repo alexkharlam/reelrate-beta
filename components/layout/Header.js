@@ -12,7 +12,7 @@ function Header() {
         <header className={styles.header}>
           <Link href="/" className={styles["img-container"]}>
             <Image
-              src="/logo.svg"
+              src="/img/logo.svg"
               width="223"
               height="109"
               alt="reelrate logo"
