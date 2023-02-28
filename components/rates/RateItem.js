@@ -1,6 +1,7 @@
 import styles from "./RateItem.module.css";
 import Link from "next/link";
 import { useDispatch } from "react-redux";
+import Image from "next/image";
 
 import { getImagePath } from "@/utils/functions/getImagePath";
 import { deleteRate } from "@/store/rates-slice";
