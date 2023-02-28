@@ -7,8 +7,8 @@ function HeaderNav() {
     <nav className={styles.nav}>
       <ul className={styles.list}>
         <HeaderNavLink
-          title="collections"
-          link="/collections"
+          title="watch list"
+          link="/watch-list"
           iconPath="/play-outline.svg"
         />
         <HeaderNavLink
