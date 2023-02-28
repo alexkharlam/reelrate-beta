@@ -55,9 +55,9 @@
   border-radius: 50%;
 }
 
-.img {
-  width: 100%;
-  height: auto;
+.img-container {
+  height: 33rem;
+  overflow: hidden;
   border-radius: 10px;
 }
 

@@ -29,13 +29,9 @@ function RateItem({ rateData }) {
             <p className={`${styles["rate-value"]}`}>{rateValue}</p>
           </div>
           <div className={styles.filter} />
-          <img
-            className={styles.img}
-            src={src}
-            width="500"
-            height="200"
-            alt={title}
-          />
+          <div className={styles["img-container"]}>
+            <Image className={styles.img} src={src} fill alt={title} />
+          </div>
         </Link>
         <div className={styles["buttons-container"]}>
           <button

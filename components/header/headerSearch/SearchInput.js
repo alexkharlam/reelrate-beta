@@ -31,7 +31,7 @@ function SearchInput() {
         onBlur={blurHandler}
         className={styles.input}
         type="text"
-        placeholder="Search over 2m movies"
+        placeholder="Search for millions of movies"
       />
       {isFocusing && inputValue.length > 0 && (
         <SearchResults loading={loading} error={error} results={results} />

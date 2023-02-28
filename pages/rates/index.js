@@ -11,7 +11,7 @@ function RatesPage() {
       <Head>
         <title>Your rates — ReelRate</title>
       </Head>
-      <RatesList rates={rates} />;
+      <RatesList rates={rates} />
     </>
   );
 }
