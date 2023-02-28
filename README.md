@@ -1,7 +1,7 @@
 # Reelrate
 
 Portfolio Next.js project
-Search for movies, see information about them, rate them, maintain your rates
+Search for movies, see information about them, rate them, maintain your rates                                                                            
 [SEE DEMO (WEBSITE)](https://reelrate-beta.netlify.app/)
 
 App in beta (doesn't have all features yet, still in progress)
@@ -10,7 +10,7 @@ App in beta (doesn't have all features yet, still in progress)
 
 ### What used
 
-Next.js
+Next.js                                                                                                                             
 Redux (to control rates state)
 
 ## For now, app has these features:
