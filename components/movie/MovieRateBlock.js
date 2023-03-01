@@ -26,7 +26,12 @@ function MovieRateBlock({ movieData }) {
       )}
 
       <button onClick={toggleIsRating} className={styles.rate} type="button">
-        <Image src="/star-outline.svg" width="30" height="30" alt="Rate icon" />
+        <Image
+          src="/icons/star-outline.svg"
+          width="30"
+          height="30"
+          alt="Rate icon"
+        />
         <p>Rate this movie</p>
       </button>
     </div>
