@@ -1,6 +1,6 @@
 # ReelRate
 
-ReelRate is a web app where you can search for movies from the MovieDatabase API, rate them, and keep track of your ratings.
+ReelRate is a web app where you can search for movies from the MovieDatabase API, rate them, and keep track of your ratings.                                  
 [Go to the website (see demo)](http://reelrate-beta.netlify.app)
 
 ## Getting Started
