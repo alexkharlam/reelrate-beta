@@ -1,0 +1,23 @@
+.header {
+  background-color: rgba(41, 41, 41, 0.9);
+  font-size: 2.4rem;
+  padding: 0.8rem;
+  justify-content: space-between;
+  align-items: center;
+
+  display: flex;
+}
+
+.icon {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(241deg)
+    brightness(103%) contrast(103%);
+}
+
+.link {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.li {
+}

@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import SearchInput from "../header/headerSearch/SearchInput";
 import HeaderNav from "../header/headerNavigation/HeaderNav";
+import MobileHeader from "./MobileHeader";
 
 function Header() {
   return (
@@ -22,7 +23,9 @@ function Header() {
           <HeaderNav />
         </header>
       </div>
-      <div className={styles["mobile-container"]}>Mobile nav</div>
+      <div className={styles["mobile-container"]}>
+        <MobileHeader />
+      </div>
     </>
   );
 }
