@@ -34,6 +34,7 @@ In the future updates, I plan to add the following features:
 
 - Watchlist page: a page where users can manage the movies they want to watch. Users will be able to add movies to their watchlist directly from the movie page.
 - Search and filter: the ability to search and filter rated movies on the "Your Rates" and watchlist pages.
+- Images loading optimization
 - Rating comments: when rating a movie, users will be able to add a small text comment about the movie.
 - Animations and transitions: we plan to add animations and smooth transitions between pages to enhance the user experience.
 - Dark theme: the option for users to switch to a dark theme.
