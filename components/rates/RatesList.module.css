@@ -43,3 +43,43 @@
   column-gap: 1.2rem;
   row-gap: 6.4rem;
 }
+
+@media (max-width: 1220px) {
+  .main {
+    max-width: 100rem;
+  }
+
+  .rates-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1030px) {
+  .main {
+    max-width: 75rem;
+  }
+
+  .rates-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 775px) {
+  .main {
+    max-width: 50rem;
+  }
+
+  .rates-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .main {
+    max-width: 40rem;
+  }
+
+  .rates-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

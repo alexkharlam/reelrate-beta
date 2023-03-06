@@ -15,3 +15,9 @@
   box-shadow: 0 0 3.2rem rgba(186, 186, 186, 0.1);
   transform: scale(1.05);
 }
+
+@media (max-width: 459px) {
+  .item {
+    height: 25rem;
+  }
+}

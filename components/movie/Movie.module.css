@@ -6,3 +6,9 @@
 
   margin-top: 4.8rem;
 }
+
+@media (max-width: 850px) {
+  .movie-container {
+    grid-template-columns: 1fr;
+  }
+}

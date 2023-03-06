@@ -31,12 +31,20 @@
   z-index: 100;
 }
 
-@media (max-width: 1000px) {
-  .container {
+.search {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .search {
+    display: none;
+  }
+
+  /* .container {
     display: none;
   }
 
   .mobile-container {
     display: block;
-  }
+  } */
 }

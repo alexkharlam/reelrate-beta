@@ -61,6 +61,10 @@
   border-radius: 10px;
 }
 
+.img-container img {
+  object-fit: cover;
+}
+
 /* buttons */
 .buttons-container {
   width: 100%;
@@ -95,4 +99,12 @@
 
 .delete:hover {
   background-color: #495057;
+}
+
+@media (max-width: 550px) {
+  .img-container {
+    height: 30rem;
+    overflow: hidden;
+    border-radius: 10px;
+  }
 }

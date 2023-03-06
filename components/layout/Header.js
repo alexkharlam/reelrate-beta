@@ -19,7 +19,9 @@ function Header() {
               alt="reelrate logo"
             />
           </Link>
-          <SearchInput />
+          <div className={styles.search}>
+            <SearchInput />
+          </div>
           <HeaderNav />
         </header>
       </div>
